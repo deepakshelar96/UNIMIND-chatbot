@@ -10,7 +10,7 @@ The chatbot consists of the following components:
 
 1. **LLaMA2**: A state-of-the-art language model used to generate conversational responses.
 2. **Streamlit**: Provides a user-friendly web interface for interacting with the chatbot.
-3. **FastAPI**: Manages the backend API, connecting the chatbot logic to the frontend and database.
+3. **FastAPI**: Manages the backend API, connecting the chatbot logic to the front end and database.
 4. **MySQL**: Stores pre-defined responses for prompts, enhancing efficiency.
 5. **Docker**: Ensures a portable and consistent runtime environment.
 6. **Supervisor**: Manages multiple processes (LLaMA2 server and Streamlit app) within the Docker container.
@@ -35,9 +35,9 @@ The chatbot consists of the following components:
    - **Purpose**: Defines the containerization setup for the chatbot.
    - **Key Features**:
      - Installs Python dependencies and system tools.
-     - Sets up Supervisor to manage FastAPI and Streamlit processes.
+     - Set up a Supervisor to manage FastAPI and Streamlit processes.
 
-### **4. `supervisord.conf`**
+### **4. `supervisor.conf`**
    - **Purpose**: Configures Supervisor to manage multiple processes in the Docker container.
    - **Key Features**:
      - Runs the FastAPI server (`run_llama2_server.py`).
@@ -58,7 +58,7 @@ The chatbot consists of the following components:
 
 ---
 
-## **Working of the Project**
+## **Working on the Project**
 
 ### **1. Frontend**
    - The user interacts with the chatbot through a Streamlit-based web interface.
@@ -91,7 +91,7 @@ The chatbot consists of the following components:
       ```
    2. **Build the Docker image**:
       ```bash
-      docker build -t chatbot_image .
+      docker build -t chatbot_image.
       ```
    3. **Run the Docker container**:
       ```bash
