@@ -1,0 +1,12 @@
+streamlit
+requests
+langchain
+langchain-core
+langchain-community
+fastapi
+uvicorn
+mysql-connector-python
+python-dotenv  # Added to read .env file
+pymysql
+streamlit-chat
+
